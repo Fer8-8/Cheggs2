@@ -1,0 +1,419 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjncw2lnlg2bh"]
+
+[ext_resource type="Script" path="res://scripts/board.gd" id="1_g3q4w"]
+[ext_resource type="PackedScene" uid="uid://jm6gjodwh1rd" path="res://scenes/tile.tscn" id="2_srnbj"]
+
+[node name="Board" type="HBoxContainer"]
+offset_right = 480.0
+offset_bottom = 480.0
+theme_override_constants/separation = 0
+script = ExtResource("1_g3q4w")
+
+[node name="Row1" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile2" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile3" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile4" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile5" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile6" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile7" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Tile8" parent="Row1" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Row2" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile10" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile11" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile12" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile13" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile14" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile15" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Tile16" parent="Row2" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Row3" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile10" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile11" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile12" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile13" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile14" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile15" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Tile16" parent="Row3" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Row4" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile10" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile11" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile12" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile13" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile14" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile15" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Tile16" parent="Row4" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Row5" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile10" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile11" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile12" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile13" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile14" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile15" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Tile16" parent="Row5" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Row6" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile10" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile11" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile12" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile13" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile14" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile15" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Tile16" parent="Row6" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Row7" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile10" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile11" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile12" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile13" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile14" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile15" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true
+
+[node name="Tile16" parent="Row7" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Row8" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Tile9" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.665206, 0.298531, 0.298531, 1)
+red = true
+
+[node name="Tile10" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.331027, 0.148558, 0.148558, 1)
+dark = true
+red = true
+
+[node name="Tile11" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile12" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile13" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+
+[node name="Tile14" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.411765, 0.411765, 0.411765, 1)
+dark = true
+
+[node name="Tile15" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.210919, 0.340715, 0.730104, 1)
+blue = true
+
+[node name="Tile16" parent="Row8" instance=ExtResource("2_srnbj")]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 2
+color = Color(0.10496, 0.16955, 0.363322, 1)
+dark = true
+blue = true

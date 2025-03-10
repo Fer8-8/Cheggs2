@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://jm6gjodwh1rd"]
+
+[ext_resource type="Script" path="res://scripts/Tile.gd" id="1_vt6em"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrxlt"]
+size = Vector2(4, 4)
+
+[node name="Tile" type="ColorRect" groups=["Tile"]]
+custom_minimum_size = Vector2(50, 50)
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+size_flags_horizontal = 4
+mouse_filter = 1
+color = Color(0.827451, 0.827451, 0.827451, 1)
+script = ExtResource("1_vt6em")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(30, 30)
+collision_layer = 2
+collision_mask = 2
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_xrxlt")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://dt1g1hos86yaq"]
+
+[ext_resource type="PackedScene" uid="uid://bjncw2lnlg2bh" path="res://scenes/board.tscn" id="1_afmgs"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_okcyy"]
+[ext_resource type="PackedScene" uid="uid://c2ugq0tf006sp" path="res://scenes/Zombie.tscn" id="3_akx2y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mctje"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_okcyy")
+metadata/_edit_horizontal_guides_ = [1.0]
+
+[node name="Board" parent="." instance=ExtResource("1_afmgs")]
+offset_left = 372.0
+offset_top = 57.0
+offset_right = 852.0
+offset_bottom = 537.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Pieces" type="Node2D" parent="."]
+
+[node name="Zombie" parent="Pieces" instance=ExtResource("3_akx2y")]
+position = Vector2(159, 215)
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(114, 126)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_mctje")
